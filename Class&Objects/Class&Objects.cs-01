@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OPP
+{
+    class clsPerson
+    {
+        //Fields
+        public string FirstName;
+        public string LastName;
+
+        //Method 
+
+        public string FullName()
+        {
+            return FirstName + ' ' + LastName;
+        }
+    }
+
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            clsPerson Person1 = new clsPerson();
+
+            Console.WriteLine("Accessing Object 1 (Person1) ");
+            Person1.FirstName = "Yusuf";
+            Person1.LastName = "Shaaban Arja";
+            Console.WriteLine(Person1.FullName());
+
+            clsPerson Person2 = new clsPerson();
+
+            Console.WriteLine("\nAccessing Object 2 (Person2) ");
+            Person1.FirstName = "Yusuf2";
+            Person1.LastName = "Shaaban Arja2";
+            Console.WriteLine(Person1.FullName());
+
+            Console.ReadKey();
+        }
+    }
+}
